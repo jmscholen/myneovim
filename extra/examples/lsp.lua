@@ -64,7 +64,7 @@ lsp.configure('solargraph', {
       formatting = true, -- solargraph format is just faster
       useBundler = true,
       -- change to true if you want to use here instead of null-ls (null ls is faster for diagnostics)
-      diagnostics = false,
+      diagnostics = true,
     }
   }
 })
