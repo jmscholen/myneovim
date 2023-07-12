@@ -207,6 +207,7 @@ function M.setup_mappings()
 
   local set = vim.keymap.set
 
+  set("i", "jj",    "<Esc>",  bufopts)
   set('n', '<M-l>', '<C-w>l', bufopts)
   set('n', '<M-h>', '<C-w>h', bufopts)
   set('n', '<M-k>', '<C-w>k', bufopts)
