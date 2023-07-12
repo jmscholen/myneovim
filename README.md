@@ -1,6 +1,7 @@
 # Introduction
 
-mooD Nvim is a configuration made for those who wants to install and use, without worries.
+This is a fork of mooD Nvim.
+This is my personal configuration. 
 
 <!--toc:start-->
 - [🪄 Features](#-features)
