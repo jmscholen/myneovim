@@ -134,8 +134,8 @@ run_pre_check () {
   echo "================= Checking install environment ================="
   [ -d ~/.nvm ] && NVM_CHECK=true || NVM_CHECK=false
   [ -d ~/.npm ] && NPM_CHECK=true || NPM_CHECK=false
-  GIT_SSH_COMMAND= git ls-remote -q $MOOD_GIT &> /dev/null
-  [[ $? = 0 ]] && GIT_CHECK=true || GIT_CHECK=false
+  # GIT_SSH_COMMAND= git ls-remote -q $MOOD_GIT &> /dev/null
+  # [[ $? = 0 ]] && GIT_CHECK=true || GIT_CHECK=false
   type python3 >/dev/null 2>&1 && PYTHON3_CHECK=true || PYTHON3_CHECK=false
   type rvm >/dev/null 2>&1 && RVM_CHECK=true || RVM_CHECK=false
   type rbenv >/dev/null 2>&1 && RBENV_CHECK=true || RBENV_CHECK=false
@@ -158,7 +158,7 @@ run_pre_check () {
   printf "%20s     %6s\n" "CHECK" "STATUS"
   check_color "NVIM is installed" "$NVIM_CHECK"
   check_color "NVIM ver. >= 0.8" "$NVIM_VERSION_CHECK"
-  check_color "Access to Mood Repo" "$GIT_CHECK"
+  # check_color "Access to Mood Repo" "$GIT_CHECK"
   check_color "NVM is installed" "$NVM_CHECK"
   check_color "NPM is installed" "$NPM_CHECK"
   check_color "Python3 is installed" "$PYTHON3_CHECK"
