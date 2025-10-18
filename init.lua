@@ -18,6 +18,8 @@ end
 
 vim.g.mapleader = " "
 
+vim.opt.tags = './tags;,tags' -- Default, looks in current dir and then in 'tags'
+
 setup("mood-scripts.install-config")
 
 -- vim script functions
