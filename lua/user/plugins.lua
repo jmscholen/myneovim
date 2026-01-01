@@ -4,6 +4,13 @@
 
 local user_plugins = {
   -- { 'goolord/alpha-nvim', enabled = false },
+  -- Amp Plugin
+  {
+    "sourcegraph/amp.nvim",
+    branch = "main", 
+    lazy = false,
+    opts = { auto_start = true, log_level = "info" },
+  },
   'kat0h/nyancat.vim',
   {
     "greggh/claude-code.nvim",
